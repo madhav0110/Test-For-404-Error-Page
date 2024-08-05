@@ -1,0 +1,571 @@
+
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 78%; /* Ensure full viewport height */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('Background.png') no-repeat center center/cover;
+}
+
+.container {
+    text-align: center;
+    background-color: #FFFFFF(243, 245, 249, 0.8); /* Fixed color with opacity */
+    padding: 20px;
+    border-radius: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw; /* Responsive width */
+    max-width: 800px; /* Maximum width */
+    height: 50vh; /* Responsive height */
+    max-height: 500px; /* Maximum height */
+}
+
+h1 {
+    font-size: 5vw; /* Responsive font size */
+    margin-right: 10%;
+    background: linear-gradient(45deg, #75C9F8, #2B71F8); /* Gradient colors */
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* For other browsers */
+    color: transparent; /* Make text color transparent to show gradient */
+    display: inline-block; /* Ensure h1 respects the gradient */
+}
+
+p {
+    font-size: 1.5vw; /* Responsive font size */
+    margin-bottom: 2vw; /* Responsive margin bottom */
+    color: #0E588A;
+}
+
+/* Base Button Styles */
+.home-link, .projects-link, .contact-us-link, .Contact {
+    text-decoration: none;
+    background-color: #3498db; /* Default background color */
+    padding: 0.5vw 0.8vw; /* Responsive padding */
+    border-radius: 0%; /* Rounded corners */
+    transition: background-color 0.3s;
+    margin-bottom: 2.3vw; /* Responsive margin bottom */
+    margin-left: 1.2vw; /* Responsive margin left */
+    font-size: 1.2vw; /* Default font size */
+    display: inline-block; /* Ensure proper layout */
+    color: white; /* Default text color */
+}
+
+/* Contact Button Specific Styles */
+.Contact {
+    background-color: #ffffff; /* Background color for Contact Us */
+    color: #626E76; /* Text color for Contact Us */
+}
+
+/* Hover States */
+.home-link:hover {
+    background-color: #007bcd;
+}
+
+.Contact:hover {
+    background-color: #f0f0f0; /* Adjust background color on hover */
+    color: #626E76; /* Text color on hover */
+}
+
+/* Link Group */
+.link-group {
+    display: flex;
+    flex-direction: row; /* Keeps links in a single row */
+    gap: 0vw; /* Responsive gap between links */
+}
+
+
+.BackToLogin {
+    margin-top: 1vw; /* Responsive margin top */
+    margin-right: 3vw; /* Responsive margin right */
+    text-decoration: none; /* Removes underline from link */
+    color: #0E8BDF; /* Adjust text color as needed */
+    font-size: 1.2vw; /* Default font size */
+}
+
+/* SVG Icons Positioning */
+.icon {
+    position: absolute;
+    width: 10vw; /* Default responsive width */
+    height: auto; /* Maintain aspect ratio */
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+}
+
+/* Specific icon positioning */
+.icon1 {
+    bottom: 0%;
+    left: 8%;
+    width: 8vw; /* Responsive width */
+}
+
+.icon2 {
+    bottom: 0%;
+    left: 15%;
+    width: 13vw; /* Responsive width */
+}
+
+.icon3 {
+    bottom: 0%;
+    left: 28%;
+    width: 10vw; /* Responsive width */
+}
+
+.icon4 {
+    bottom: 0%;
+    right: 40%;
+    width: 8vw; /* Responsive width */
+}
+
+.icon5 {
+    bottom: 0%;
+    right: 30%;
+    width: 8vw; /* Responsive width */
+}
+
+.icon6 {
+    bottom: 0%;
+    right: 0%;
+    width: 31vw; /* Responsive width */
+}
+
+/* Media Queries for Enhanced Responsiveness */
+@media (max-width: 2560px) {
+    body, html {
+        height: 85%; /* Ensure full viewport height */
+        background-size: cover; /* Make sure the background covers the entire screen */
+        background-position: center; /* Center the background image */
+    }
+    body {
+        background-size: cover; /* Adjust background size for mobile */
+    }
+    
+    .container {
+        height: auto; /* Allow the container height to adjust naturally */
+        max-height: none; /* Remove the max-height to avoid overflow */
+
+    }
+    
+    .link-group {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 1vw; /* Add some spacing between buttons */
+    }
+    
+    .home-link, .BackToLogin, .Contact {
+        margin-bottom: 1vw; /* Ensure there's spacing between buttons */
+        margin-left: 0; /* Remove left margin */
+        width: 80%; /* Make buttons wider for mobile view */
+        text-align: center; /* Center the text inside buttons */
+        border-radius: 10px;
+
+    }
+
+    .BackToLogin {
+        margin-top: 2vw; /* Increase space above Back to Login link */
+        margin-left: 2vw; /* Increase space left Back to Login link */
+        text-align: center; /* Center the text */
+    }
+    h1 {
+        font-size: 8vw;
+
+    }
+    .icon1 {
+        width: 4vw;
+        bottom: 0%;
+        left: 8%; /* Adjusted position */
+    }
+    .icon2 {
+        width: 10vw;
+        bottom: 0%;
+        left: 12%; /* Adjusted position */
+    }
+    .icon3 {
+        width: 9vw;
+        bottom: 0%;
+        left: 22%; /* Adjusted position */
+    }
+    .icon4 {
+        width: 7vw;
+        bottom: 0%;
+        right: 32%; /* Adjusted position */
+    }
+    .icon5 {
+        width: 7vw;
+        bottom: 0%;
+        right: 22%; /* Adjusted position */
+    }
+    .icon6 {
+        width: 25vw;
+        bottom: 0%;
+        right: 0%; /* Adjusted position */
+    }
+}
+@media (max-width: 1441px) {
+    body {
+        background-size: cover; /* Adjust background size for mobile */
+    }
+    
+    .container {
+        height: auto; /* Allow the container height to adjust naturally */
+        max-height: none; /* Remove the max-height to avoid overflow */
+    }
+    
+    .link-group {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 1vw; /* Add some spacing between buttons */
+    }
+    
+    .home-link, .BackToLogin, .Contact {
+        margin-bottom: 1vw; /* Ensure there's spacing between buttons */
+        margin-left: 0; /* Remove left margin */
+        width: 80%; /* Make buttons wider for mobile view */
+        text-align: center; /* Center the text inside buttons */
+        border-radius: 8px;
+    }
+
+    .BackToLogin {
+        margin-top: 2vw; /* Increase space above Back to Login link */
+        margin-left: 2vw; /* Increase space left Back to Login link */
+        text-align: center; /* Center the text */
+    }
+    h1 {
+        font-size: 7vw;
+    }
+
+    .icon1 {
+        width: 4vw;
+        bottom: 0%;
+        left: 8%; /* Adjusted position */
+    }
+    .icon2 {
+        width: 10vw;
+        bottom: 0%;
+        left: 12%; /* Adjusted position */
+    }
+    .icon3 {
+        width: 9vw;
+        bottom: 0%;
+        left: 22%; /* Adjusted position */
+    }
+    .icon4 {
+        width: 7vw;
+        bottom: 0%;
+        right: 32%; /* Adjusted position */
+    }
+    .icon5 {
+        width: 7vw;
+        bottom: 0%;
+        right: 22%; /* Adjusted position */
+    }
+    .icon6 {
+        width: 25vw;
+        bottom: 0%;
+        right: 0%; /* Adjusted position */
+    }
+}
+@media (max-width: 1026px) {
+    body {
+        background-size: cover; /* Adjust background size for mobile */
+    }
+    
+    .container {
+        height: auto; /* Allow the container height to adjust naturally */
+        max-height: none; /* Remove the max-height to avoid overflow */
+    }
+    
+    .link-group {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 1vw; /* Add some spacing between buttons */
+    }
+    
+    .home-link, .BackToLogin, .Contact {
+        margin-bottom: 1vw; /* Ensure there's spacing between buttons */
+        margin-left: 0; /* Remove left margin */
+        width: 80%; /* Make buttons wider for mobile view */
+        text-align: center; /* Center the text inside buttons */
+        border-radius: 6px;
+    }
+
+    .BackToLogin {
+        margin-top: 2vw; /* Increase space above Back to Login link */
+        margin-left: 2vw; /* Increase space left Back to Login link */
+        text-align: center; /* Center the text */
+    }
+    
+    h1 {
+        font-size: 6vw;
+    }
+
+    .icon1 {
+        width: 4vw;
+        bottom: 0%;
+        left: 8%; /* Adjusted position */
+    }
+    .icon2 {
+        width: 10vw;
+        bottom: 0%;
+        left: 12%; /* Adjusted position */
+    }
+    .icon3 {
+        width: 9vw;
+        bottom: 0%;
+        left: 22%; /* Adjusted position */
+    }
+    .icon4 {
+        width: 7vw;
+        bottom: 0%;
+        right: 32%; /* Adjusted position */
+    }
+    .icon5 {
+        width: 7vw;
+        bottom: 0%;
+        right: 22%; /* Adjusted position */
+    }
+    .icon6 {
+        width: 25vw;
+        bottom: 0%;
+        right: 0%; /* Adjusted position */
+    }
+}
+@media (max-width: 769px) {
+    body, html {
+        height: 100%; /* Ensure full viewport height */
+        background-size: cover; /* Make sure the background covers the entire screen */
+        background-position: center; /* Center the background image */
+    }
+    body {
+        background-size: cover; /* Adjust background size for mobile */
+    }
+    
+    .container {
+        height: auto; /* Allow the container height to adjust naturally */
+        max-height: none; /* Remove the max-height to avoid overflow */
+    }
+    
+    .link-group {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 1vw; /* Add some spacing between buttons */
+    }
+    
+    .home-link, .BackToLogin, .Contact {
+        margin-bottom: 1vw; /* Ensure there's spacing between buttons */
+        margin-left: 0; /* Remove left margin */
+        width: 80%; /* Make buttons wider for mobile view */
+        text-align: center; /* Center the text inside buttons */
+        border-radius: 4px;
+    }
+    .BackToLogin {
+        margin-top: 2vw; /* Increase space above Back to Login link */
+        margin-left: 2vw; /* Increase space left Back to Login link */
+        text-align: center; /* Center the text */
+    }
+    
+    h1 {
+        font-size: 6vw;
+    }
+
+    .icon1 {
+        width: 4vw;
+        bottom: 0%;
+        left: 8%; /* Adjusted position */
+    }
+    .icon2 {
+        width: 10vw;
+        bottom: 0%;
+        left: 12%; /* Adjusted position */
+    }
+    .icon3 {
+        width: 9vw;
+        bottom: 0%;
+        left: 22%; /* Adjusted position */
+    }
+    .icon4 {
+        width: 7vw;
+        bottom: 0%;
+        right: 32%; /* Adjusted position */
+    }
+    .icon5 {
+        width: 7vw;
+        bottom: 0%;
+        right: 22%; /* Adjusted position */
+    }
+    .icon6 {
+        width: 25vw;
+        bottom: 0%;
+        right: 0%; /* Adjusted position */
+    }
+    
+}
+@media (max-width: 426px) {
+    body, html {
+        height: 100%; /* Ensure full viewport height */
+        background-size: cover; /* Make sure the background covers the entire screen */
+        background-position: center; /* Center the background image */
+    }
+    
+    body {
+        background-size: cover; /* Adjust background size for mobile */
+    }
+    
+    .container {
+        height: auto; /* Allow the container height to adjust naturally */
+        max-height: none; /* Remove the max-height to avoid overflow */
+    }
+    
+    .link-group {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 1vw; /* Add some spacing between buttons */
+    }
+    
+    .home-link, .BackToLogin, .Contact {
+        margin-bottom: 1vw; /* Ensure there's spacing between buttons */
+        margin-left: 0; /* Remove left margin */
+        width: 80%; /* Make buttons wider for mobile view */
+        font-size: 2vw; /* Increase the font size for better visibility */
+        padding: 1vw 2vw; /* Increase padding to make buttons larger */
+        text-align: center; /* Center the text inside buttons */
+        border-radius: 4px;
+    }
+    
+    .BackToLogin {
+        margin-top: 2vw; /* Increase space above Back to Login link */
+        margin-left: 2vw; /* Increase space left Back to Login link */
+        font-size: 2vw; /* Increase the font size for better visibility */
+        text-align: center; /* Center the text */
+    }
+    
+    
+    h1 {
+        font-size: 10.5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+    .icon1 {
+        width: 4vw;
+        bottom: 0%;
+        left: 8%; /* Adjusted position */
+    }
+    .icon2 {
+        width: 10vw;
+        bottom: 0%;
+        left: 12%; /* Adjusted position */
+    }
+    .icon3 {
+        width: 9vw;
+        bottom: 0%;
+        left: 22%; /* Adjusted position */
+    }
+    .icon4 {
+        width: 7vw;
+        bottom: 0%;
+        right: 32%; /* Adjusted position */
+    }
+    .icon5 {
+        width: 7vw;
+        bottom: 0%;
+        right: 22%; /* Adjusted position */
+    }
+    .icon6 {
+        width: 25vw;
+        bottom: 0%;
+        right: 0%; /* Adjusted position */
+    }
+}
+@media (max-width: 376px) {
+    body, html {
+        height: 100%; /* Ensure full viewport height */
+        background-size: cover; /* Make sure the background covers the entire screen */
+        background-position: center; /* Center the background image */
+    }
+    body {
+        background-size: cover; /* Adjust background size for mobile */
+    }
+    
+    .container {
+        height: auto; /* Allow the container height to adjust naturally */
+        max-height: none; /* Remove the max-height to avoid overflow */
+    }
+    
+    .link-group {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+        gap: 2vw; /* Add some spacing between buttons */
+    }
+    
+    .home-link, .BackToLogin, .Contact {
+        margin-bottom: 1vw; /* Ensure there's spacing between buttons */
+        font-size: 2vw; /* Increase the font size for better visibility */
+        margin-left: 0; /* Remove left margin */
+        width: 80%; /* Make buttons wider for mobile view */
+        padding: 1vw 2vw; /* Increase padding to make buttons larger */
+        text-align: center; /* Center the text inside buttons */
+        border-radius: 3px;
+        
+    }
+
+    .BackToLogin {
+        margin-top: 2vw; /* Increase space above Back to Login link */
+        margin-left: 2vw; /* Increase space left Back to Login link */
+        text-align: center; /* Center the text */
+    }
+
+    h1 {
+        font-size: 10.5vw;
+    }
+
+    p {
+        font-size: 3vw;
+        
+    }
+    .icon1 {
+        width: 4vw;
+        bottom: 0%;
+        left: 8%; /* Adjusted position */
+    }
+    .icon2 {
+        width: 10vw;
+        bottom: 0%;
+        left: 12%; /* Adjusted position */
+    }
+    .icon3 {
+        width: 9vw;
+        bottom: 0%;
+        left: 22%; /* Adjusted position */
+    }
+    .icon4 {
+        width: 7vw;
+        bottom: 0%;
+        right: 32%; /* Adjusted position */
+    }
+    .icon5 {
+        width: 7vw;
+        bottom: 0%;
+        right: 22%; /* Adjusted position */
+    }
+    .icon6 {
+        width: 25vw;
+        bottom: 0%;
+        right: 0%; /* Adjusted position */
+    }
+}
