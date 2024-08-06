@@ -526,8 +526,8 @@ p {
         width: 80%; /* Make buttons wider for mobile view */
         padding: 3vw 6vw; /* Increase padding to make buttons larger */
         text-align: center; /* Center the text inside buttons */
-        border-radius: 3px;
-        font-size: 70%;
+        border-radius: 4px;
+        font-size: 50%;
         
     }
 
