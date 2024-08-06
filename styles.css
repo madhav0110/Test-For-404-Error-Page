@@ -524,7 +524,7 @@ p {
         font-size: 2vw; /* Increase the font size for better visibility */
         margin-left: 0; /* Remove left margin */
         width: 80%; /* Make buttons wider for mobile view */
-        padding: 4vw 6vw; /* Increase padding to make buttons larger */
+        padding: 3vw 6vw; /* Increase padding to make buttons larger */
         text-align: center; /* Center the text inside buttons */
         border-radius: 3px;
         font-size: 50%;
