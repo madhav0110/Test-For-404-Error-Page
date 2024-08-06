@@ -428,26 +428,27 @@ p {
     .container {
         height: auto; /* Allow the container height to adjust naturally */
         max-height: none; /* Remove the max-height to avoid overflow */
-        margin-bottom: 40%;
+        margin-bottom: 0%;
 
 
     }
     
     .link-group {
         flex-direction: column; /* Stack buttons vertically */
+        margin-top: 50%;
         align-items: center; /* Center align buttons */
         gap: 1vw; /* Add some spacing between buttons */
     }
     
     .home-link, .BackToLogin, .Contact {
         margin-bottom: 1vw; /* Ensure there's spacing between buttons */
-        font-size: 2vw; /* Increase the font size for better visibility */
+        font-size: 10vw; /* Increase the font size for better visibility */
         margin-left: 0; /* Remove left margin */
-        width: 80%; /* Make buttons wider for mobile view */
-        padding: 3vw 6vw; /* Increase padding to make buttons larger */
+        width: 60%; /* Make buttons wider for mobile view */
+        padding: 2vw 4vw; /* Increase padding to make buttons larger */
         text-align: center; /* Center the text inside buttons */
         border-radius: 4px;
-        font-size: 80%;
+        font-size: 90%;
         
     }
 
@@ -463,7 +464,7 @@ p {
     }
 
     p {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         
     }
     .icon1 {
@@ -515,19 +516,20 @@ p {
     
     .link-group {
         flex-direction: column; /* Stack buttons vertically */
+        margin-top: 50%;
         align-items: center; /* Center align buttons */
-        gap: 2vw; /* Add some spacing between buttons */
+        gap: 1vw; /* Add some spacing between buttons */
     }
     
     .home-link, .BackToLogin, .Contact {
         margin-bottom: 1vw; /* Ensure there's spacing between buttons */
-        font-size: 2vw; /* Increase the font size for better visibility */
+        font-size: 10vw; /* Increase the font size for better visibility */
         margin-left: 0; /* Remove left margin */
-        width: 80%; /* Make buttons wider for mobile view */
-        padding: 3vw 6vw; /* Increase padding to make buttons larger */
+        width: 60%; /* Make buttons wider for mobile view */
+        padding: 2vw 4vw; /* Increase padding to make buttons larger */
         text-align: center; /* Center the text inside buttons */
         border-radius: 4px;
-        font-size: 80%;
+        font-size: 90%;
         
     }
 
@@ -539,11 +541,12 @@ p {
     }
 
     h1 {
+        margin-top: 50%;
         font-size: 20vw;
     }
 
     p {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         
     }
     .icon1 {
